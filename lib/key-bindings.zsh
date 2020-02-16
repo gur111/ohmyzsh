@@ -91,3 +91,8 @@ bindkey "^[m" copy-prev-shell-word
 ## Fix weird sequence that rxvt produces
 #bindkey -s '^[[Z' '\t'
 #
+
+# Delete whole words with CTRL
+bindkey '^H' backward-kill-word
+bindkey '^[[3;5~' kill-word
+
